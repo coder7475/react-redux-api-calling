@@ -1,4 +1,4 @@
-import './App.css'
+import Todos from './components/Todos';
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
      
       <h1>React In Redux Way</h1>
       <h2>Use: redux, react-redux, redux-thunk</h2>
-      
+      <Todos/>
     </>
   )
 }
