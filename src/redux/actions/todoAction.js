@@ -19,7 +19,6 @@ const getAllTodos = () => {
       dispatch({ type: GET_TODOS_SUCCESS, payload: res.data });
 
     } catch (error) {
-
       dispatch({ type: GET_TODOS_FAILED, payload: error.message });
 
     }
