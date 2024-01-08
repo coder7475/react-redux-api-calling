@@ -17,7 +17,19 @@ function Todos() {
   return (
     <div>
       <h2>TODOS</h2>      
-
+      {isLoading &&  <h3>Loading...</h3> }
+      {error &&  <h3>{error.message}</h3> }
+      <section>
+        {todos &&
+          todos.map((todo) => {
+            return (
+              <article key={todo.id}>
+                <h4>{todo.id}</h4>
+                <p>{todo.title}</p>
+              </article>
+            );
+          })}
+      </section>
     </div>
   )
 }
