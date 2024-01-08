@@ -1,9 +1,13 @@
-# React + Vite
+# API Calling in react-redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Learn how to manage fetched data in react app with redux state management using thunk middleware
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# react-redux-api-calling
+## Steps:
+Manage todo apps with async data:
+ 1. Create consts needed for redux async action
+ 2. Create async action creator for async data fetched by api calling: getAllTodos
+ 3. Create reducer: todoReducer 
+ 4. Create store
+ 5. Provide store to whole app using react-redux
+ 6. Use store using react-redux library to update the view
+ 7. Add styles if necessary
