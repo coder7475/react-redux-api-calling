@@ -6,10 +6,10 @@ import {
 } from "../constants/todosConstants";
 
 // this is a aynch action creator creates action based on data state
-export const getAllTodos = () => {
+const getAllTodos = () => {
 
   return async (dispatch) => {
-    
+
     dispatch({ type: GET_TODOS_REQUEST });
 
     try {
@@ -25,3 +25,5 @@ export const getAllTodos = () => {
     }
   };
 };
+
+export default getAllTodos;
